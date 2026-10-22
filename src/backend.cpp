@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <string>
 #include <functional>
 
 void exec(const char* cmd, const std::function<void(std::string)> &err) {
@@ -14,7 +15,7 @@ void exec(const char* cmd, const std::function<void(std::string)> &err) {
 		err("ytdl failed to open");
 	}
 
-	while (std::fgets(&buf, arrSz, f) != nullptr) {
+	while (std::fgets(buf, arrSz, f) != nullptr) {
 		
 	}
 
